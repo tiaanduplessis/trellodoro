@@ -6,6 +6,8 @@
 - Option to add "rest" time
 
 ## How to use
-Access [chrome://extensions], mark the "Developer Mode" checkbox and click on "Load unpacked extension.." the Trellodoro folder.
+1. Visit chrome://extensions in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox:  The menu's icon is three horizontal bars. and select Extensions under the Tools menu to get to the same place).
 
-[chrome://extensions]: <chrome://extensions>
+2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
+
+3. Click "Load unpacked extension…" and load the Trellodoro folder.

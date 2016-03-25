@@ -47,7 +47,7 @@ function trellodoro(timer) {
 }
 
 $(function() {
-  $('#header .header-user').before('<div id="trellodoro-container"><div id="trellodoro-start"><img src="'+ trellodoroLogo +'" alt="Trellodoro"></div><div id="trellodoro-counter">00:00</div><div id="trellodoro-play">&#9654;</div><div id="trellodoro-pause">&#10074;&#10074;</div></div>');
+  $('#header .header-user').before('<div id="trellodoro-container"><div id="trellodoro-start"><img src="'+ trellodoroLogo +'" alt="Trellodoro"></div><div id="trellodoro-counter">25:00</div><div id="trellodoro-play">&#9654;</div><div id="trellodoro-pause">&#10074;&#10074;</div></div>');
 
   $('#trellodoro-start').click(function() {
     isPaused = false;
