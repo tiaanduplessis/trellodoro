@@ -1,0 +1,48 @@
+#trellodoro-container {
+  box-sizing: border-box;
+  background:rgba(255,255,255,.3);
+  width: 31px;
+  height: 30px;
+  color: #fff;
+  padding: 7px 8px 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  white-space: nowrap;
+  margin-left: -10px;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+#trellodoro-container.trellodoroStarted { 
+  width: 96px;
+}
+
+#trellodoro-start {
+  cursor: pointer;
+  float: left;
+  margin-right: 8px;
+}
+
+#trellodoro-start img {
+  width: 16px;
+  height: auto;
+}
+
+#trellodoro-counter {
+  margin-top: -1px;
+}
+
+#trellodoro-play, #trellodoro-pause {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 7px;
+}
+
+.trellodoroStarted #trellodoro-pause {
+  display: block;
+  top: 6px;
+}

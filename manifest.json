@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trellodoro - Pomodoro Timer on Trello",
+  "description": "A pomodoro time for trello cards",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["jquery-2.1.4.min.js","trellodoro.js"],
+      "css": ["trellodoro.css"]
+    }
+  ],
+  "icons": { "128": "trellodoro-favicon.png" },
+  "browser_action": {
+   "default_icon": "trellodoro-favicon.png"
+  },
+  "web_accessible_resources": [
+    "trellodoro-favicon.png",
+    "trellodoro-logo.png"
+  ],
+  "permissions": [
+   "notifications"
+   ]
+}
