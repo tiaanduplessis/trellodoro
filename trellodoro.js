@@ -60,13 +60,14 @@ function trellodoro(timer) {
 }
 
 $(function() {
-  // Request permission to use Chrome Notification Messages
-  document.addEventListener('DOMContentLoaded', function () {
-    if (Notification.permission !== "granted")
-      Notification.requestPermission();
-  });
 
   $('#header .header-user').before('<div id="trellodoro-container"><div id="trellodoro-start"><img src="'+ trellodoroLogo +'" alt="Trellodoro"></div><div id="trellodoro-counter">'+ trellodoroSettings.pomodoroTime +':00</div><div id="trellodoro-play">&#9654;</div><div id="trellodoro-pause">&#10074;&#10074;</div></div>');
+
+
+  // Request permission to use Chrome Notification Messages
+  if (Notification.permission !== "granted") {
+    Notification.requestPermission();
+  }
 
   $('#trellodoro-start').click(function() {
     isPaused = false;
